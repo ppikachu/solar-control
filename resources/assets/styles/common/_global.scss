@@ -31,12 +31,14 @@
 }
 
 .navbar-logo {
-  width: 300px;
+  width: 260px;
 }
 
-#menu-menu {
+#menu-menu,
+.dropdown-item {
   font-family: $headings-font-family;
-  font-weight: 900;
+  font-weight: 500;
+  font-size: 1rem;
 }
 
 h1,
@@ -49,7 +51,118 @@ h6 {
 }
 
 body {
-  //padding-top: 80px;
-  margin-top: 100px;
+  // margin-top: 78px;
   overflow-x: hidden;
 }
+
+.anime {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  // filter: grayscale(1);
+  // filter: sepia(100%) hue-rotate(270deg) saturate(3);
+  // background-color: $black;
+  // animation-name: animatedBackground;
+  // animation-duration: 10s;
+  // animation-timing-function: ease-in-out;
+  // animation-iteration-count: infinite;
+  // animation-direction: alternate;
+  .a45 {
+    transform: rotate(45deg);
+  }
+
+  .persiana {
+    width: 20px;
+    background-color: azure;
+    height: 100vh;
+    display: inline-block;
+  }
+}
+
+.sim-auto {
+  // @include media-breakpoint-down(sm) {
+  height: 30vh;
+  // }
+}
+
+.bg90 {
+  background-color: $gray-200 !important;
+  border-width: 2px;
+
+  &.active {
+    border-color: $primary !important;
+  }
+}
+
+.bg70 {
+  background-color: $gray-300 !important;
+  border-width: 2px;
+
+  &.active {
+    border-color: $primary !important;
+  }
+}
+
+.bg40 {
+  background-color: $gray-600 !important;
+  border-width: 2px;
+
+  &.active {
+    border-color: $primary !important;
+  }
+}
+
+.bg35 {
+  background-color: $gray-700 !important;
+  border-width: 2px;
+
+  &.active {
+    border-color: $primary !important;
+  }
+}
+
+.bg20 {
+  background-color: $gray-800 !important;
+  border-width: 2px;
+
+  &.active {
+    border-color: $primary !important;
+  }
+}
+
+.bg05 {
+  background-color: $gray-900 !important;
+  border-width: 2px;
+
+  &.active {
+    border-color: $primary !important;
+  }
+}
+
+.bg-hielo {
+  background-color: $gray-300 !important;
+  border-width: 2px;
+
+  &.active {
+    border-color: $primary !important;
+  }
+}
+
+.bg-rojo {
+  background-color: #b40000 !important;
+  border-width: 2px;
+
+  &.active {
+    border-color: $primary !important;
+  }
+}
+
+.bg-azul {
+  background-color: #0a46b6 !important;
+  border-width: 2px;
+
+  &.active {
+    border-color: $primary !important;
+  }
+}
+

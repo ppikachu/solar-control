@@ -29,5 +29,47 @@ export default {
   },
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
+
+    /* global stylesheet_directory_uri */
+    var color='blanco';
+    var lamina='none';
+    var auto='coche-1';
+    var images_dir=stylesheet_directory_uri + '/solar-control/dist/images/';
+    // FIXME: hardcoded url del tema y solamente funciona en yarn:build (ver assets.json / bookmarks wordpress)
+
+    function cambiarLamina () {
+      var imagenLamina = images_dir + auto + '-' + lamina + '.png';
+      console.log( imagenLamina );
+      $( '#replaceLamina' ).attr( 'src', imagenLamina );
+    }
+
+    function cambiarAuto () {
+      var imagenAuto = images_dir + auto + '-' + color + '.jpg';
+      console.log( imagenAuto );
+      $( '#replaceAuto' ).attr( 'src', imagenAuto );
+      cambiarLamina();
+    }
+
+    $('.laminas').on('click', '.btn', function() {
+      $('.laminas .active').removeClass('active');
+      $(this).addClass('active');
+      lamina = $(this).attr('data-filter');
+      cambiarLamina();
+    });
+
+    $('.turismo-crossover').on('click', '.btn', function() {
+      $('.turismo-crossover .active').removeClass('active');
+      $(this).addClass('active');
+      auto = $(this).attr('data-filter');
+      cambiarAuto();
+    });
+
+    $('.color').on('click', '.btn', function() {
+      $('.color .active').removeClass('active');
+      $(this).addClass('active');
+      color = $(this).attr('data-filter');
+      cambiarAuto();
+    });
+    
   },
 };

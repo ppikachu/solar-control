@@ -1,9 +1,10 @@
-<article @php post_class() @endphp>
-  <header>
-    <h2 class="entry-title"><a href="{{ get_permalink() }}">{!! get_the_title() !!}</a></h2>
-    @include('partials/entry-meta')
-  </header>
-  <div class="entry-summary">
-    @php the_excerpt() @endphp
+<article class="col" data-aos="fade-up" data-aos-once="true">
+  <div class="nota card">
+    <div class="img-hover-zoom">{!! the_post_thumbnail('thumbnail', array( 'class' => 'card-img-top img-fluid' )) !!}</div>
+    <div class="card-body">
+      <h5 class="card-title">{!! get_the_title() !!}</h5>
+      <p class="card-text small">{!! get_the_excerpt() !!}</p>
+      <a href="{{ get_permalink() }}" class="small btn btn-outline-primary btn-block stretched-link">+</a>
+    </div>
   </div>
 </article>
