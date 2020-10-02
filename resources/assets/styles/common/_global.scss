@@ -1,4 +1,4 @@
-@font-face {
+/* @font-face {
   font-family: GeoSlab;
   src: url("../fonts/GeomericSlabserif703MediumBT.woff2") format("woff2");
   font-weight: 400;
@@ -28,18 +28,7 @@
   font-weight: 700;
   font-style: italic;
   font-display: auto;
-}
-
-.navbar-logo {
-  width: 260px;
-}
-
-#menu-menu,
-.dropdown-item {
-  font-family: $headings-font-family;
-  font-weight: 500;
-  font-size: 1rem;
-}
+} */
 
 h1,
 h2,
@@ -55,114 +44,41 @@ body {
   overflow-x: hidden;
 }
 
-.anime {
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  // filter: grayscale(1);
-  // filter: sepia(100%) hue-rotate(270deg) saturate(3);
-  // background-color: $black;
-  // animation-name: animatedBackground;
-  // animation-duration: 10s;
-  // animation-timing-function: ease-in-out;
-  // animation-iteration-count: infinite;
-  // animation-direction: alternate;
-  .a45 {
-    transform: rotate(45deg);
-  }
-
-  .persiana {
-    width: 20px;
-    background-color: azure;
-    height: 100vh;
-    display: inline-block;
-  }
+.foto_header {
+  filter: brightness(0.5);
 }
 
-.sim-auto {
-  // @include media-breakpoint-down(sm) {
-  height: 30vh;
-  // }
+/* svg {
+  opacity: 1 !important;
+} */
+
+.wp-block-cover__inner-container {
+  @extend .container;
 }
 
-.bg90 {
-  background-color: $gray-200 !important;
-  border-width: 2px;
+.carousel-item {
+  height: 100vh;
+  overflow: hidden;
 
-  &.active {
-    border-color: $primary !important;
+  @include media-breakpoint-up(md) {
+    height: 66vh;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 }
 
-.bg70 {
-  background-color: $gray-300 !important;
-  border-width: 2px;
+.nota {
+  img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
 
-  &.active {
-    border-color: $primary !important;
+    @include media-breakpoint-up(md) {
+      height: 200px;
+    }
   }
 }
-
-.bg40 {
-  background-color: $gray-600 !important;
-  border-width: 2px;
-
-  &.active {
-    border-color: $primary !important;
-  }
-}
-
-.bg35 {
-  background-color: $gray-700 !important;
-  border-width: 2px;
-
-  &.active {
-    border-color: $primary !important;
-  }
-}
-
-.bg20 {
-  background-color: $gray-800 !important;
-  border-width: 2px;
-
-  &.active {
-    border-color: $primary !important;
-  }
-}
-
-.bg05 {
-  background-color: $gray-900 !important;
-  border-width: 2px;
-
-  &.active {
-    border-color: $primary !important;
-  }
-}
-
-.bg-hielo {
-  background-color: $gray-300 !important;
-  border-width: 2px;
-
-  &.active {
-    border-color: $primary !important;
-  }
-}
-
-.bg-rojo {
-  background-color: #b40000 !important;
-  border-width: 2px;
-
-  &.active {
-    border-color: $primary !important;
-  }
-}
-
-.bg-azul {
-  background-color: #0a46b6 !important;
-  border-width: 2px;
-
-  &.active {
-    border-color: $primary !important;
-  }
-}
-

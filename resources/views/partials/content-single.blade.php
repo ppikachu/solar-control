@@ -1,6 +1,6 @@
 <article @php post_class() @endphp>
-  <header>
-    <h1 class="entry-title pt-5">{!! get_the_title() !!}</h1>
+  <header class="pt-5">
+    <h1 class="entry-title pt-5 mt-5">{!! get_the_title() !!}</h1>
   </header>
   <div class="entry-content">
     @php the_content() @endphp

@@ -5,3 +5,24 @@
 .banner .nav a {
   @extend .nav-link;
 }
+
+.bg-grad {
+  background-image: linear-gradient($primary 66%, transparentize($primary, 1));
+}
+
+.navbar-logo {
+  width: 250px;
+}
+
+#menu-top,
+.dropdown-item {
+  font-family: $headings-font-family;
+  font-weight: 900;
+  text-align: center;
+  font-size: 1rem;
+
+  @include media-breakpoint-up(lg) {
+    font-size: 0.8rem;
+    text-align: unset;
+  }
+}

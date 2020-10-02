@@ -30,8 +30,13 @@ add_filter('body_class', function (array $classes) {
  * Add "… Continued" to the excerpt
  */
 add_filter('excerpt_more', function () {
-    return ' &hellip; <a href="' . get_permalink() . '">' . 'leer' . '</a>';
+    return ' &hellip; <a href="' . get_permalink() . '">' . '' . '</a>';
 });
+
+function mytheme_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', __NAMESPACE__.'\\mytheme_custom_excerpt_length', 999 );
 
 /**
  * Template Hierarchy should search for .blade.php files

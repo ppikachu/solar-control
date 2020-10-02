@@ -36,6 +36,8 @@ add_action('after_setup_theme', function () {
     // Gutenberg wide
     add_theme_support('align-wide');
 
+    add_theme_support( 'custom-units' );
+
     /**
      * Enable plugins to manage the document title
      * @link https://developer.wordpress.org/reference/functions/add_theme_support/#title-tag

@@ -1,0 +1,11 @@
+.btn,
+.wp-block-button__link {
+  @extend .text-uppercase;
+
+  font-family: $headings-font-family;
+  font-weight: $headings-font-weight;
+}
+
+.wp-block-button__link {
+  @extend .btn;
+}
