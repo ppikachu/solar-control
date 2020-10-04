@@ -8,6 +8,9 @@ export default {
     $('.btn_contacto').on('click',function() {
       $('#menu-mobile').collapse('hide');
       $('#navbar-toggle').toggleClass('is-active');
+      $('html, body').animate({
+        scrollTop: $('#contacto').offset().top,
+      }, 800);
     });
   },
   finalize() {
@@ -23,7 +26,7 @@ export default {
 
     function cambiarLamina () {
       var imagenLamina = images_dir + auto + '-' + color + '-' + lamina + '.jpg';
-      console.log( imagenLamina );
+      // console.log( imagenLamina );
       $( '#replaceLamina' ).attr( 'src', imagenLamina );
     }
 
@@ -46,6 +49,19 @@ export default {
       $(this).addClass('active');
       color = $(this).attr('data-filter');
       cambiarLamina();
+    });
+
+    /* simulador interior */
+    function cambiarInterior () {
+      var imagenInterior = images_dir + 'Interior' + '-' + lamina + '.jpg';
+      $( '#replaceInterior' ).attr( 'src', imagenInterior );
+    }
+
+    $('.interior').on('click', '.btn', function() {
+      $('.interior .active').removeClass('active');
+      $(this).addClass('active');
+      lamina = $(this).attr('data-filter');
+      cambiarInterior();
     });
     
   },

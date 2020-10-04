@@ -1,16 +1,28 @@
 .header_pag_corto {
-  margin-top: 75px;
   position: relative;
+  margin-top: 66px;
+  padding-top: $spacer*3;
+  padding-bottom: $spacer*2;
 
   @include media-breakpoint-up(md) {
-    height: 30vh;
+    /* padding-top: $spacer*5;
+    padding-bottom: $spacer; */
+    height: 50vh;
   }
 
-  img {
+  img.foto_header {
     position: absolute;
+    top: 0;
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+
+  img.lineas_header {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    bottom: 0;
   }
 
   .container {
@@ -76,7 +88,8 @@
 
 // simulador
 
-#simulador_auto {
+#simulador_auto,
+#simulador_arquitectura {
   .rounded-circle {
     border-width: 3px;
     border-color: $gray-500;

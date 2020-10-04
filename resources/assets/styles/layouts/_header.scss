@@ -7,11 +7,15 @@
 }
 
 .bg-grad {
-  background-image: linear-gradient($primary 66%, transparentize($primary, 1));
+  background-image: linear-gradient($primary 76%, transparentize($primary, 1));
+}
+
+.navbar {
+  padding-bottom: $spacer*2;
 }
 
 .navbar-logo {
-  width: 250px;
+  width: 240px;
 }
 
 #menu-top,
@@ -19,10 +23,11 @@
   font-family: $headings-font-family;
   font-weight: 900;
   text-align: center;
-  font-size: 1rem;
+  font-size: 1.3rem;
+  white-space: normal !important;
 
   @include media-breakpoint-up(lg) {
-    font-size: 0.8rem;
+    font-size: 0.9rem;
     text-align: unset;
   }
 }
