@@ -1,8 +1,10 @@
 <article @php post_class() @endphp>
-  <header class="pt-5">
-    <h1 class="entry-title pt-5 mt-5">{!! get_the_title() !!}</h1>
+  <header class="my-5">
+    {!! the_post_thumbnail('post_thumbnail', array( 'class' => 'alignfull img-fluid' )) !!}
+    <h1 class="mt-5 entry-title text-primary">{!! get_the_title() !!}</h1>
+    @include('partials/entry-meta')
   </header>
-  <div class="entry-content">
+  <div class="entry-content mb-5">
     @php the_content() @endphp
   </div>
   <footer>

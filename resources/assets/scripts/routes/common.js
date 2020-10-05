@@ -5,6 +5,22 @@ export default {
       $(this).toggleClass('is-active');
     });
 
+    // loader
+    setTimeout(function(){
+      $('#loader').removeClass('load');
+    }, 1000);
+
+    $('.nav-link:not([href^="\\#"]), .dropdown-item').on('click',function() {
+      var href = $(this).attr('href');
+      event.preventDefault();
+      $('#loader').addClass('load');
+
+      setTimeout(function(){
+        window.location.href = href;
+      }, 1000);
+    });
+    //
+
     $('.btn_contacto').on('click',function() {
       $('#menu-mobile').collapse('hide');
       $('#navbar-toggle').toggleClass('is-active');
@@ -16,13 +32,13 @@ export default {
   finalize() {
     // JavaScript to be fired on all pages, after page specific JS is fired
 
-    /* simulador coches */
     /* global stylesheet_directory_uri */
+
+    /* simulador coches */
     var color='blanco';
     var lamina='tonalidad-00';
     var auto='Auto';
     var images_dir=stylesheet_directory_uri + '/solar-control/resources/assets/images/';
-    // FIXME: hardcoded url del tema y solamente funciona en yarn:build (ver assets.json / bookmarks wordpress)
 
     function cambiarLamina () {
       var imagenLamina = images_dir + auto + '-' + color + '-' + lamina + '.jpg';

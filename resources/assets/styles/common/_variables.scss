@@ -39,7 +39,8 @@ $dark:          $gray-800 !default;
 $hamburger-layer-color         : rgb(255, 255, 255);
 
 // Options
-$enable-shadows:                              false !default;
+// $enable-shadows:        true;
+// $enable-gradients:      true;
 
 // Body
 //
@@ -185,7 +186,7 @@ $btn-font-weight:             $headings-font-weight;
 
 $dropdown-min-width:                10rem !default;
 $dropdown-padding-y:                0;
-$dropdown-spacer:                   0.125rem !default;
+$dropdown-spacer:                   0;
 $dropdown-font-size:                $font-size-base !default;
 // $dropdown-color:                    $body-color !default;
 $dropdown-bg:                       $primary !default;

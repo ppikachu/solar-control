@@ -16,7 +16,6 @@
           <div class="carousel-caption d-flex flex-column justify-content-center">
             <h1>control solar</h1>
             <p class="lead">Tenemos la solución para el calor excesivo, para el impacto negativo de los rayos UV, el resplandor, el deterioro del interior y su seguridad.</p>
-            <div class="btn-caption mb-4"><a class="btn btn-primary btn-lg">Más información</a></div>
           </div>
 
             <svg class="barra1" width="100%" height="100%" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
@@ -46,7 +45,7 @@
           <div class="carousel-caption d-flex flex-column justify-content-center">
             <h1>seguridad</h1>
             <p class="lead">Obtenga una capa extra de protección entre los pasajeros del vehículo y el cristal en caso de accidente, están diseñadas para retener fragmentos de vidrio en caso de rotura.</p>
-            <div class="btn-caption mb-4"><a class="btn btn-primary btn-lg">Más información</a></div>
+            <div class="btn-caption mb-4"><a class="btn btn-primary btn-lg" href="/linea-automoviles">Más información</a></div>
           </div>
         </div>
         <div class="carousel-item">
@@ -63,7 +62,7 @@
           <div class="carousel-caption d-flex flex-column justify-content-center">
             <h1>diseño</h1>
             <p class="lead">Las ventanas son un elemento de diseño fundamental en edificios, casas y oficinas para el aprovechamiento de la luz natural y la mejora del confort de quienes habitan esos espacios de trabajo y de recreación en el hogar.</p>
-            <div class="btn-caption mb-4"><a class="btn btn-primary btn-lg">Más información</a></div>
+            <div class="btn-caption mb-4"><a class="btn btn-primary btn-lg" href="/linea-arquitectura-y-diseno">Más información</a></div>
           </div>
         </div>
         <div class="carousel-item">
@@ -80,7 +79,7 @@
           <div class="carousel-caption d-flex flex-column justify-content-center">
             <h1>instalador autorizado 3M</h1>
             <p class="lead">SOLAR CONTROL® y 3M otorgan a nuestros clientes, el respaldo y la garantía certificada en cada uno de los trabajos que realizamos.</p>
-            <div class="btn-caption mb-4"><a class="btn btn-primary btn-lg">Más información</a></div>
+            <div class="btn-caption mb-4"><a class="btn btn-primary btn-lg" href="/nosotros">Más información</a></div>
           </div>
         </div>
       </div>
