@@ -95,6 +95,15 @@
     <div class="container">
       @yield('content')
     </div>
+    <div class="container my-5" id="ofertas">
+      <h2 class="text-primary">Ofertas</h2>
+      @php $args = array('post_type'=>'oferta','orderby'=>'date','order'=>'DESC'); $the_query = new WP_Query( $args ); @endphp
+      <div class="row row-cols-1 row-cols-md-4">
+        @while($the_query->have_posts()) @php $the_query->the_post() @endphp
+          @include('partials.content-oferta')
+        @endwhile
+      </div>
+    </div>
     @php do_action('get_footer') @endphp
     @include('partials.footer')
     @php wp_footer() @endphp

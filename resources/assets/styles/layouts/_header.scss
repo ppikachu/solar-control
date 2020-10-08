@@ -18,13 +18,22 @@
   width: 240px;
 }
 
-#menu-top,
+.hamburger:focus {
+  outline-style: none;
+}
+
+.nav-item,
 .dropdown-item {
   font-family: $headings-font-family;
-  font-weight: 900;
+  font-weight: 600;
   text-align: center;
   font-size: 1.3rem;
   white-space: normal !important;
+
+  &.active,
+  .current-menu-item a {
+    font-weight: 900;
+  }
 
   @include media-breakpoint-up(lg) {
     font-size: 0.9rem;
