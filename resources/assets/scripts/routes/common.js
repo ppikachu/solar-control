@@ -10,7 +10,7 @@ export default {
       $('#loader').removeClass('load');
     }, 1000);
 
-    $('.nav-link:not([href^="\\#"]), .dropdown-item').on('click',function() {
+    $('a:not([href^="\\#"]), .dropdown-item').on('click',function() {
       var href = $(this).attr('href');
       event.preventDefault();
       $('#loader').addClass('load');
@@ -41,9 +41,12 @@ export default {
     var images_dir=stylesheet_directory_uri + '/solar-control/resources/assets/images/';
 
     function cambiarLamina () {
+      $( '#replaceLamina' ).addClass('hide');
       var imagenLamina = images_dir + auto + '-' + color + '-' + lamina + '.jpg';
-      // console.log( imagenLamina );
-      $( '#replaceLamina' ).attr( 'src', imagenLamina );
+      console.log( imagenLamina );
+      $( '#replaceLamina' ).attr( 'src', imagenLamina ).load(function() {
+        $( '#replaceLamina' ).removeClass('hide');
+      });
     }
 
     $('.laminas').on('click', '.btn', function() {
@@ -69,8 +72,11 @@ export default {
 
     /* simulador interior */
     function cambiarInterior () {
+      $( '#replaceInterior' ).addClass('hide');
       var imagenInterior = images_dir + 'Interior' + '-' + lamina + '.jpg';
-      $( '#replaceInterior' ).attr( 'src', imagenInterior );
+      $( '#replaceInterior' ).attr( 'src', imagenInterior ).load(function() {
+        $( '#replaceInterior' ).removeClass('hide');
+      });
     }
 
     $('.interior').on('click', '.btn', function() {

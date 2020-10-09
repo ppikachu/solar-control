@@ -12,6 +12,7 @@
 <div id="simulador_auto" class="mb-5 mt-3">
   <div class="row">
     <div class="col-md-7 d-flex align-items-center">
+      <img id="iso" class="fa-spin" src="@asset('images/ISO.svg')" />
       <img id="replaceLamina" class="img-fluid rounded-lg" src="@asset('images/Auto-blanco-tonalidad-00.jpg')">
     </div>
     <div class="col-md-5 text-center">

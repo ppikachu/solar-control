@@ -87,6 +87,25 @@
 
 #simulador_auto,
 #simulador_arquitectura {
+  #iso {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: -2rem;
+    margin-left: -2rem;
+    z-index: -1;
+    width: 4rem;
+  }
+
+  img {
+    transition: opacity 0.2s;
+    transition-delay: 0.2s;
+
+    &.hide {
+      opacity: 0;
+    }
+  }
+
   .rounded-circle {
     border-width: 3px;
     border-color: $gray-500;

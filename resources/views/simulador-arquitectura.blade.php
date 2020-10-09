@@ -13,6 +13,7 @@
   <h2 class="text-primary">Simulador Interiores</h2>
   <div class="row">
     <div class="col-md-7 d-flex align-items-center">
+      <img id="iso" class="fa-spin" src="@asset('images/ISO.svg')" />
       <img id="replaceInterior" class="img-fluid rounded-lg" src="@asset('images/Interior-tonalidad-00.jpg')">
     </div>
     <div class="col-md-5 text-center">

@@ -9,33 +9,30 @@ h6 {
 
 body {
   overflow-x: hidden;
+  position: relative;
 }
 
 #loader {
-  position: absolute;
-  top: 0;
   transition-property: height;
   transition-duration: 1s;
-  width: 100vw;
-  height: 1vh;
+  height: 0;
   background-color: $primary;
-  z-index: 200;
+  width: 100%;
+  z-index: 2000;
 
   .fas {
-    transition-property: top margin-top;
+    transition-property: top;
     transition-duration: 1s;
-    top: 1vh;
+    top: -17vh;
     position: absolute;
-    margin-top: -2rem;
     color: $light;
   }
 
   &.load {
-    height: 100vh;
+    height: 100%;
 
     .fas {
       top: 100vh;
-      margin-top: 0;
     }
   }
 }
