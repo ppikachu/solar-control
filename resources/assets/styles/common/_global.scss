@@ -15,23 +15,27 @@ body {
 #loader {
   transition-property: height;
   transition-duration: 1s;
+  transition-delay: 0ms;
   height: 0;
   background-color: $primary;
   width: 100%;
   z-index: 2000;
+  top: 0;
 
-  .fas {
+  #espatula {
     transition-property: top;
-    transition-duration: 1s;
-    top: -17vh;
+    transition-duration: 1.2s;
+    top: -270px;
     position: absolute;
-    color: $light;
+    width: 200px;
+    margin-left: -100px;
   }
 
   &.load {
     height: 100%;
+    transition-delay: 100ms;
 
-    .fas {
+    #espatula {
       top: 100vh;
     }
   }
@@ -53,6 +57,10 @@ body {
     height: 66vh;
   }
 
+  .sobrefoto {
+    background: rgba($color: #000, $alpha: 0.5);
+  }
+
   img {
     width: 100%;
     height: 100%;
@@ -70,7 +78,7 @@ body {
   }
 }
 
-.oferta img {
+.oferta .card-img {
   width: 100%;
   height: 300px;
   object-fit: cover;
@@ -80,7 +88,20 @@ body {
   }
 }
 
-.single header img {
+// coblocks fotos
+.coblocks-gallery--figure img {
+  transition: all 500ms;
+
+  &:hover {
+    transform: scale(1.1);
+  }
+}
+
+.coblocks-lightbox__arrow {
+  border: none;
+}
+
+.single header img.img-fluid {
   height: 200px;
   object-fit: cover;
 

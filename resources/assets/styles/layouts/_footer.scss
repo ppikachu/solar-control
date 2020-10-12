@@ -1,3 +1,7 @@
+.bg-primary-dark {
+  background-color: darken($primary, 10%);
+}
+
 #menu-pie-a,
 #menu-pie-b {
   font-family: $headings-font-family;

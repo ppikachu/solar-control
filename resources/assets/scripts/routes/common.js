@@ -10,7 +10,7 @@ export default {
       $('#loader').removeClass('load');
     }, 1000);
 
-    $('a:not([href^="\\#"]), .dropdown-item').on('click',function() {
+    $('a:not([href^="\\#"], [href^="mailto\\:"]), .dropdown-item').on('click',function() {
       var href = $(this).attr('href');
       event.preventDefault();
       $('#loader').addClass('load');

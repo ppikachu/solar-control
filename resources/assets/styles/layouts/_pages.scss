@@ -83,6 +83,17 @@
   top: 40px;
 }
 
+// colores car wrapping
+.car-wrapping-ploteo-vehicular .header_pag_corto h1 {
+  display: inline-block;
+  background: url("../images/fondo-car-wrapping.png") center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
 // simulador
 
 #simulador_auto,

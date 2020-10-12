@@ -19,4 +19,4 @@
   </div><!-- /.container -->
 </nav>
 
-<div id="loader" class="load text-center position-fixed"><i class="fas fa-brush fa-5x"></i></div>
+<div id="loader" class="load text-center position-fixed"><img src="@asset('images/Espatula.png')" id="espatula"></div>
