@@ -108,7 +108,7 @@
       @yield('content')
     </div>
     <div class="container my-5" id="ofertas">
-      <h2 class="text-primary">Ofertas</h2>
+      <h2 class="text-primary">Promos y Beneficios</h2>
       @php $args = array('post_type'=>'oferta','orderby'=>'date','order'=>'DESC'); $the_query = new WP_Query( $args ); @endphp
       <div class="row row-cols-1 row-cols-md-4">
         @while($the_query->have_posts()) @php $the_query->the_post() @endphp

@@ -19,7 +19,7 @@
     <div class="col-md-5 text-center">
       <div class="interior my-4">
         <h6>Tonalidad</h6>
-        <div class="row d-flex justify-content-around">
+        <div class="py-2 row d-flex justify-content-around">
           <div class="col-auto"><button type="button" class="btn rounded-circle active" data-filter='tonalidad-00'></button><br>sin</div>
           <div class="col-auto"><button type="button" class="btn rounded-circle bg05" data-filter='tonalidad-50'></button><br>50%</div>
           <div class="col-auto"><button type="button" class="btn rounded-circle bg20" data-filter='tonalidad-90'></button><br>90%</div>

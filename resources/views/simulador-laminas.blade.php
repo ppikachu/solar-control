@@ -18,7 +18,7 @@
     <div class="col-md-5 text-center">
       <div class="laminas my-4">
         <h6>Tonalidad</h6>
-        <div class="row d-flex justify-content-around">
+        <div class="py-2 row d-flex justify-content-around">
           <div class="col-auto"><button type="button" class="btn rounded-circle active" data-filter='tonalidad-00'></button><br>sin</div>
           <div class="col-auto"><button type="button" class="btn rounded-circle bg05" data-filter='tonalidad-05'></button><br>5%</div>
           <div class="col-auto"><button type="button" class="btn rounded-circle bg20" data-filter='tonalidad-20'></button><br>20%</div>
@@ -27,14 +27,14 @@
       </div>
       <div class="autos my-4">
         <h6>turismo/crossover</h6>
-        <div class="row text-center d-flex justify-content-around turismo-crossover">
-          <div class="col-auto"><button type="button" class="btn btn-link active" data-filter='Auto'><i class="fas fa-car-side fa-2x"></i></button><br>turismo</div>
-          <div class="col-auto"><button type="button" class="btn btn-link" data-filter='Camioneta'><i class="fas fa-truck-pickup fa-2x"></i></button><br>crossover</div>
+        <div class="py-2 row text-center d-flex justify-content-around turismo-crossover">
+          <div class="col-auto"><button type="button" class="btn btn-primary rounded-circle active" data-filter='Auto'><i class="fas fa-car-side fa-lg"></i></button><br>turismo</div>
+          <div class="col-auto"><button type="button" class="btn btn-primary rounded-circle" data-filter='Camioneta'><i class="fas fa-truck-pickup fa-lg"></i></button><br>crossover</div>
         </div>
       </div>
       <div class="colores my-4">
         <h6>color del auto</h6>
-        <div class="row text-center d-flex justify-content-around color">
+        <div class="py-2 row text-center d-flex justify-content-around color">
           <div class="col-auto"><button type="button" class="btn rounded-circle active" data-filter='blanco'></button><br>blanco</div>
           <div class="col-auto"><button type="button" class="btn rounded-circle bg-dark" data-filter='negro'></button><br>negro</div>
           <div class="col-auto"><button type="button" class="btn rounded-circle bg-danger" data-filter='rojo'></button><br>rojo</div>
