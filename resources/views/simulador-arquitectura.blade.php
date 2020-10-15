@@ -16,8 +16,8 @@
       <img id="iso" class="fa-spin" src="@asset('images/ISO.svg')" />
       <img id="replaceInterior" class="img-fluid rounded-lg" src="@asset('images/Interior-tonalidad-00.jpg')">
     </div>
-    <div class="col-md-5 text-center">
-      <div class="interior my-4">
+    <div class="col-md-5 d-flex align-items-center text-center">
+      <div class="interior my-4 w-100">
         <h6>Tonalidad</h6>
         <div class="py-2 row d-flex justify-content-around">
           <div class="col-auto"><button type="button" class="btn rounded-circle active" data-filter='tonalidad-00'></button><br>sin</div>
