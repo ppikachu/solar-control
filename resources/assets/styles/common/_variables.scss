@@ -39,7 +39,7 @@ $dark:          $gray-800 !default;
 $hamburger-layer-color         : rgb(255, 255, 255);
 
 // Options
-// $enable-shadows:        true;
+$enable-shadows:        true;
 // $enable-gradients:      true;
 
 // Body
@@ -195,18 +195,18 @@ $dropdown-padding-y:                0;
 $dropdown-spacer:                   0;
 $dropdown-font-size:                $font-size-base !default;
 // $dropdown-color:                    $body-color !default;
-$dropdown-bg:                       $primary !default;
+$dropdown-bg:                       lighten($primary, 5%) !default;
 $dropdown-border-color:             none;
 // $dropdown-border-radius:            $border-radius !default;
 $dropdown-border-width:             $border-width !default;
 // $dropdown-inner-border-radius:      calc(#{$dropdown-border-radius} - #{$dropdown-border-width}) !default;
 $dropdown-divider-bg:               $gray-200 !default;
 // $dropdown-divider-margin-y:         $nav-divider-margin-y !default;
-$dropdown-box-shadow:               0 0.5rem 1rem rgba($black, 0.175) !default;
+$dropdown-box-shadow:               0 0.2rem 2rem rgba($black, 0.175) !default;
 
 $dropdown-link-color:               $white;
 $dropdown-link-hover-color:         $white;
-$dropdown-link-hover-bg:            lighten($primary, 5%);
+$dropdown-link-hover-bg:            lighten($primary, 10%);
 
 // $dropdown-link-active-color:        $component-active-color !default;
 // $dropdown-link-active-bg:           $component-active-bg !default;

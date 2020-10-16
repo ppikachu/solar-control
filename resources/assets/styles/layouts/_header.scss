@@ -41,6 +41,13 @@
   }
 }
 
+@include media-breakpoint-down(md) {
+  .dropdown-menu {
+    margin-left: calc(-100vw / 2 + 100% / 2);
+    margin-right: calc(-100vw / 2 + 100% / 2);
+  }
+}
+
 .dropdown-menu:hover,
 .dropdown:hover > .dropdown-menu {
   display: block;

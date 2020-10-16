@@ -13,14 +13,14 @@ body {
 }
 
 #loader {
-  transition-property: height;
+  transition-property: height, top;
   transition-duration: 1s;
   transition-delay: 0ms;
   height: 0;
   background-color: $primary;
   width: 100%;
   z-index: 2000;
-  top: 0;
+  top: -270px;
 
   #espatula {
     transition-property: top;
@@ -32,6 +32,7 @@ body {
   }
 
   &.load {
+    top: 0;
     height: 100%;
     transition-delay: 100ms;
 
