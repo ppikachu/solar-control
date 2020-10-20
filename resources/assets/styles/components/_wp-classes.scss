@@ -38,11 +38,12 @@
 .alignfull {
   margin-left: calc(-100vw / 2 + 100% / 2);
   margin-right: calc(-100vw / 2 + 100% / 2);
-  // margin-left: calc(50% - 50vw);
-  // margin-right: calc(50% - 50vw);
   max-width: 100vw;
   width: 100vw;
   // overflow-x: hidden;
+  .wp-block-cover__inner-container {
+    width: auto !important;
+  }
 }
 
 /** Captions */
