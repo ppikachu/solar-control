@@ -15,7 +15,7 @@
     <div class="row my-5">
       <div class="col-12 col-md-6">
         <div class="embed-responsive embed-responsive-4by3 mb-3">
-          <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1614.4323109523436!2d-62.71778333987797!3d-35.97473509804349!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c1791cb523b7fd%3A0xfd7c93a12832092a!2sSOLAR%20CONTROL!5e0!3m2!1ses-419!2sar!4v1601243001671!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3228.805664008197!2d-62.71793348538619!3d-35.97617638012656!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95c1791cb523b7fd%3A0xfd7c93a12832092a!2sSOLAR%20CONTROL!5e0!3m2!1ses-419!2sar!4v1603158801359!5m2!1ses-419!2sar" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
         </div>
       </div>
       <div class="col-12 col-md-6 d-flex align-items-center">
