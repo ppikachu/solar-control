@@ -7,9 +7,17 @@ h6 {
   text-transform: uppercase;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   overflow-x: hidden;
   position: relative;
+
+  &:not(.home) {
+    margin-top: 69px;
+  }
 }
 
 #loader {
@@ -110,3 +118,10 @@ body {
     height: 400px;
   }
 }
+
+// contact fix javascript validation scroll
+// stylelint-disable property-no-unknown
+#contacto {
+  scroll-margin-top: 100px;
+}
+// stylelint-enable property-no-unknown

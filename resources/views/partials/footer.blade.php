@@ -28,8 +28,8 @@
         </div>
       </div>
     </div>
-    <hr id="contacto" class="pb-4 pb-md-0">
-    <h6 class="py-5 pt-md-0">Contacto</h6>
+    <hr>
+    <h6 id="contacto" class="mb-4">Contacto</h6>
     @php dynamic_sidebar('sidebar-footer') @endphp
   </div>
 </footer>

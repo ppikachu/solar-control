@@ -24,9 +24,6 @@ export default {
     $('.btn_contacto').on('click',function() {
       $('#menu-mobile').collapse('hide');
       $('#navbar-toggle').toggleClass('is-active');
-      $('html, body').animate({
-        scrollTop: $('#contacto').offset().top,
-      }, 800);
     });
   },
   finalize() {
