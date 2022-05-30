@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/wp-content/themes/solar-control",
-  "devUrl": "http://sc.local",
+  "devUrl": "http://solar.local",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
